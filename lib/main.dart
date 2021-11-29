@@ -37,13 +37,22 @@ class PorschiersHomePage extends StatelessWidget {
       
       ),
     body: 
-    Center(
-      child: ListTile(leading:CircleAvatar(radius: 30,backgroundImage: AssetImage("assets/images/profile.jpg")),
-      title: Text("Mummy"),
-      subtitle: Row(children: [Icon(Icons . done_all),SizedBox(width: 10,) ,Text("I miss you so much") ],),
-      trailing: Column(children: [Text("5:30"), Icon(Icons.notifications)],),)
-    
-      ) 
+    Column(
+      children: [
+        ListTile(leading:CircleAvatar(radius: 30,backgroundImage: AssetImage("assets/images/profile.jpg")),
+        title: Text("Mummy"),
+        subtitle: Row(children: [Icon(Icons . done_all),SizedBox(width: 10,) ,Text("I miss you so much") ],),
+        trailing: Column(children: [Text("5:30"), Icon(Icons.notifications)],),),
+
+
+         Card(
+           child: ListTile(leading:CircleAvatar(radius: 30,backgroundImage: AssetImage("assets/images/profileporsch.jpg")),
+                 title: Text("Samuel essuman"),
+                 subtitle: Row(children: [Icon(Icons . done_all),SizedBox(width: 10,) ,Text("I am finally done with the work") ],),
+                 trailing: Column(children: [Text("10:30 am"), CircleAvatar(radius: 10, backgroundColor:Colors.green, child: Text("4"),)],),),
+         ),
+      ],
+    ) 
          
    
 
